@@ -1,0 +1,400 @@
+
+@media(max-width:1330px){
+  nav{
+    display: none;
+  }
+  .open-button{
+    display: none;
+  }
+  .headerline{
+    margin-top: 14px;
+  }
+  .logo{
+  float: initial;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+@media(max-width:1150px){
+  .footer-col{
+    display: none;
+  }
+}
+
+*{
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+}
+/*Nav start*/
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  min-height: 8vh;
+}
+
+/*Logo Start*/
+.logo {
+  display: flex;
+  width: 10%;
+  margin-bottom: 20px;
+  margin-right: 5%;
+  margin-left: 5px;
+
+}
+
+.logo img {
+  width: 200px;
+  height: 75px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+/*Logo slut*/
+
+/*Login Start*/
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  border-radius: 3px;
+  background-color: #129a55;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+  width: 140px;
+  height: 38px;
+  cursor: pointer;
+  margin-top: 34px;
+  margin-right: 50px;
+  margin-left: 20px;
+  float: right;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+ height: auto;
+ display: none;
+ position: fixed;
+ top: 40%;
+ right: 40%;
+ border: 3px solid #f1f1f1;
+ z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+ max-width: 300px;
+ padding: 10px;
+ background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], input[type=password] {
+ width: 100%;
+ padding: 15px;
+ margin: 5px 0 22px 0;
+ border: none;
+ background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, input[type=password]:focus {
+ background-color: #ddd;
+ outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+ border-radius: 25px;
+ background-color: #129a55;
+ color: white;
+ padding: 16px 20px;
+ border: none;
+ cursor: pointer;
+ width: 100%;
+ margin-top: 2px;
+ margin-bottom: 1px;
+ opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+ background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+ opacity: 1;
+}
+
+.form-container a {
+  left: 32%;
+  position: relative;
+}
+
+
+.wrapper{
+  top: 50%;
+  left: 50%;
+  width: 300px;
+}
+
+.form-container input{
+  position: relative;
+  left: 5px;
+  box-sizing: border-box;
+  width: 90%;
+  font-size: 18px;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
+  color: #4a4a4a;
+  letter-spacing: 0.5px;
+  required="";
+}
+
+::placeholder{
+  color: #9a9a9a;
+  font-weight: 400;
+
+}
+
+.form-container  span{
+  position: absolute;
+  right: -140px;
+  transform: translate(0,20px);
+  top: 50%;
+  cursor: pointer;
+}
+
+.form-container .eye {
+  width: 15%;
+  height: 15%;
+  font-size: 20px;
+}
+/* Login slut*/
+
+/*Navbar Start*/
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.nav-links li{
+  list-style: none;
+}
+
+.nav-links a{
+  color: black;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.nav-links li:hover {
+  border-bottom: 2px solid black;
+}
+
+/*Linje Start*/
+.headerline{
+  border: 0;
+  height: 5px;
+  background-color: #129a55;
+  width: auto;
+}
+/*Linje slut*/
+/*Nav Slut*/
+
+/*Start*/
+/*Bredcrumbs*/
+.breadcrumbs{
+  padding: 10px;
+}
+
+.breadcrumbs-iteams{
+  display: inline-block;
+}
+
+.breadcrumbs-iteams:not(:last-of-type)::after{
+  content: '/';
+  margin: 0 5px;
+  color: #919191;
+}
+
+.breadcrumbs-link{
+  text-decoration: none;
+  color: #6b6b6b;
+}
+
+.breadcrumbs-link:hover{
+  text-decoration: underline;
+}
+
+.breadcrumbs_link--active{
+  color: #86130E;
+  font-weight: 500;
+}
+/*Bredcrumbs slut*/
+
+/*Grå box menu start*/
+.list{
+  margin: 20px;
+  list-style: none;
+  height: 400px;
+  width: 300px;
+  background-color: #eee;
+  border-radius: 5px;
+  line-height: 3;
+  font-size: 15px;
+}
+
+.list li a{
+  color: black;
+  text-decoration: none;
+}
+
+.list:hover{
+  cursor: pointer;
+}
+
+.side1{
+  padding: 20px;
+}
+
+.side2{
+  padding: 20px;
+}
+
+.side3{
+  padding: 20px;
+}
+
+.side4{
+  padding: 20px;
+  padding-right:91.9px;
+  background-color: white;
+  font-weight: 700;
+}
+
+.side5{
+  padding: 20px;
+}
+/* Grå box menu slut*/
+
+/*Info start*/
+.info-container{
+  margin-left: 450px;
+  position: absolute;
+  top: 175px;
+}
+
+.info-container h1{
+
+}
+
+.info-container h4{
+font-size: 18px;
+}
+
+.info-container p{
+  font-size: 16px;
+  margin:
+}
+
+.info-list{
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.btn{
+  font-size: 13px;
+  font-weight: bold;
+  margin-top:15px;
+  margin-left: 15px;
+  position: relative;
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  background-color: #129a55;
+  color: #fff;
+  height: 5vh;
+  width:200px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: #0c7540;
+  color: white;
+}
+
+.info-p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/*Info slut*/
+
+/*Footer*/
+.footer-line{
+  border: 0;
+  height: 5px;
+  background-color: #129a55;
+  width: auto;
+  margin-top: 800px;
+}
+
+h4{
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  color: black;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+ul{
+  list-style: none;
+}
+
+footer{
+  background-color: white;
+  width: 100%;
+  height: 550px;
+  padding: 30px 0;
+  line-height: 1.8;
+  letter-spacing: .5px;
+  position: absolute;
+  bottom: -1250px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 30px;
+}
+
+.footer-links li, a{
+  font-family: "Arial", sans-serif;
+  font-weight: 500px;
+  font-size: 15px;
+  color: black;
+}
+/*footer slut*/

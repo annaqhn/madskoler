@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tilmeld dig som instruktør</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/8b7d423f14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="info.css">
+    <script src="loginjs.js" defer></script>
+  </head>
+  <body>
+    <!-- Nav start-->
+    <nav>
+      <!-- Logo-->
+        <div class="logo">
+          <img src="img/logo.png" alt="">
+        </div>
+
+        <!-- Nav bar-->
+        <ul class="nav-links">
+          <li>
+            <a href="">Om Madskoler</a>
+          </li>
+          <li>
+            <a href="">Tilmeld dit barn</a>
+          </li>
+          <li>
+            <a href="">Bliv instruktør</a>
+          </li>
+          <li>
+            <a href="">Sponsorer og ambassadører</a>
+          </li>
+          <li>
+            <a href="">Nyheder</a>
+          </li>
+          <li>
+            <a href="">Kontakt</a>
+          </li>
+        </ul>
+
+        <!--Login-side-->
+        <button class="open-button" onclick="openForm()">Log ind</button>
+
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Log ind</h1>
+          <br>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Indsæt email" name="email" id="email" required>
+
+        <div class="wrapper">
+            <label for="password"><b>Kodeord</b></label>
+            <input type="password"  placeholder="Kodeord" id="password" required>
+            <span>
+              <img src="img/eye3.png" id="eye" class="eye" onclick="toggle()","show()"></img>
+            </span>
+        </div>
+
+        <button type="submit" class="btn">Log ind</button>
+          <a href="main/ForgotPassword">Glemt kodeord</a>
+        <button type="button" class="btn cancel" onclick="closeForm()","return()">Luk</button>
+        </form>
+    </nav>
+
+    <!-- streg-->
+    <hr class="headerline">
+    <!-- Nav slut-->
+
+    <!--  start-->
+      <!--Bredcrumbs strart-->
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-iteams">
+            <a href="#" class="breadcrumbs-link"><i class="fas fa-home"></i></a>
+          </li>
+          <li class="breadcrumbs-iteams">
+            <a href="#" class="breadcrumbs-link">Bliv instruktør</a>
+          </li>
+          <li class="breadcrumbs-iteams">
+            <a href="#" class="breadcrumbs-link breadcrumbs_link--active">Tilmeld dig som instruktør</a>
+          </li>
+        </ul>
+      <!--Bredcrumbs slut-->
+
+      <!-- Grå box menu start-->
+        <ul class="list">
+          <li>
+            <br>
+            <a class="side1" href="#">Gør en forskel</a>
+          </li>
+          <li>
+            <a class="side2" href="#">At være madskoleinstruktør</a>
+          </li>
+          <li>
+            <a class="side3" href="#">Hvor afholdes madskoler</a>
+          </li>
+          <li>
+            <a class="side4" href="#">Tilmeld dig som instruktør</a>
+          </li>
+          <li>
+            <a class="side5" href="#">Hvilken instruktørrolle skal jeg vælge?</a>
+          </li>
+        </ul>
+    <!-- Grå box menustart-->
+
+    <!-- Info start-->
+    <div class="info-container">
+      <h1>Kære frivillige instruktør</h1><br>
+        <p>For at give dig et billede af, hvad du kan forvente af os, og hvad vi
+          forventer af dig som frivillig madskoleinstruktør, <br>bedes du læse nedenstående
+          igennem før endelig tilmelding.</p>
+
+          <br>
+        <h4>Vores forventninger til dig som frivillig madskoleinstruktør:</h4><br>
+        <ul class="info-list">
+          <li><p>Du har lyst og mod på at tilbringe tid - og lave mad - sammen med børn og unge.</p></li><br>
+          <li><p>Du er over 18 år (er du under 18 år, kan du blive unghjælper).</p></li><br>
+          <li><p>Du udfylder en børneattest (og at denne er uden anmærkninger, selvfølgelig).</p></li><br>
+          <li><p>Du kan deltage i hele Madskolen (for uge-Madskoler vil det sige mandag-fredag i tidsrummet 8.00-16.00, torsdag dog til ca. 19.00 pga.
+            familiearrangement, Etniske Madskoler varer 4 dage, mens 3 dage med Madskoler varer 3 dage).</p></li><br>
+          <li><p>Du deltager i et af vores landsdækkende instruktørmøder.</p></li><br>
+          <li><p>Du deltager i 1-3 planlægningsmøder inden afholdelse af Madskolen for at forberede ugen samt fordele ansvarsopgaver.</p></li><br>
+          <li><p>Du er klar til at påtage dig ansvarsopgaver (fx stå for undervisningen mandag, finde gård til ekskursion, indkøb osv.), som både kan ligge før, under og efter madskoleugen.</p></li><br>
+          <li><p>Du instruerer børnene i madlavning, anretning og borddækning - husk hænderne på ryggen.</p></li><br>
+          <li><p>Du aktiverer børnene gennem forskellige former for fysisk aktivitet.</p></li><br>
+          <li><p>Du underviser børnene i sundhed, kost og motion.</p></li> <br>
+          <li><p>Du deltager i et evalueringsmøde efter Madskolens afholdelse.</p></li><br>
+        </ul>
+
+        <br>
+
+        <h4>Det kan du få ud af at være frivillig Madskoleinstruktør:</h4><br>
+        <ul class="info-list">
+          <li><p>En fantastisk oplevelse med børn, unge, mad og motion.</p></li><br>
+          <li><p>Mulighed for at udvide dit netværk.</p></li><br>
+          <li><p>Styrkede planlægnings- og formidlingsevner.</p></li><br>
+          <li><p>Praktisk erfaring med pædagogik, didaktik og undervisning.</p></li><br>
+          <li><p>Viden om og praktisk erfaring med formidling af emner som fx sundhed, ernæring, fysisk aktivitet,
+            hygiejne og madlavning.</p></li><br>
+          <li><p>Praktisk erfaring med planlægning og tilberedning af måltider til mindre og større grupper.</p></li><br>
+          <li><p>Mulighed for at deltage på landsdækkende instruktørkurser.</p></li><br>
+          <li><p>En bekræftelse på din deltagelse, der kan bruges til dit CV.</p></li><br>
+          <li><p>Alle, der måtte ønske at blive instruktør på Madskoler, er velkommen.
+            Det kræver altså ingen særlige kompetencer at blive madskoleinstruktør.
+            Det vigtigste for os er, at du har lysten og engagementet.</p></li><br>
+        </ul>
+
+        <p>Vi vil fra Madskolers side gøre vores bedste for, at du får en god oplevelse som instruktør.</p>
+        <button class="btn">Gå til tilmeldingsformularen</button>
+        <p class="info-p">Madglade hilsner</p>
+        <p>Madskoler</p>
+
+    </div>
+
+
+    <!-- Info slut-->
+    <!--Footer start-->
+   <!--Footer line start-->
+<hr class="footer-line">
+   <!--Footer line end-->
+   <footer>
+     <div class="container">
+       <div class="row">
+         <!--Footer links start-->
+         <div class="footer-col">
+           <h4>Madskoler</h4>
+           33 39 42 77
+           <ul class="footer-links">
+             <li><a href="#">madskoler@4h.dk</a></li>
+             <br>
+             <li><a href="#">Copyright</a></li>
+             <li><a href="#">Cookiepolitik</a></li>
+             <br>
+             <li><a href="#">Privatlispolitik</a></li>
+           </ul>
+         </div>
+
+         <div class="footer-col">
+           <h4>Om Madskoler</h4>
+           <ul class="footer-links">
+             <li><a href="#">Madskoler kort fortalt</a></li>
+             <li><a href="#">Hvad er Madskoler?</a></li>
+             <li><a href="#">Etniske Madskoler</a></li>
+             <li><a href="#">Ungdomsmadskoler</a></li>
+             <li><a href="#">3 dage med Madskoler</a></li>
+             <li><a href="#">Praktiske oplysninger</a></li>
+             <li><a href="#">Maden på Madskoler</a></li>
+             <li><a href="#">Salgs- og leverings betingelser</a></li>
+           </ul>
+           <h4>Tilmeld dit barn</h4>
+           <ul class="footer-links">
+             <li><a href="#">Liste over Madskoler</a></li>
+             <li><a href="#">Kort over Madskoler</a></li>
+             <li><a href="#">Spørgsmål vedr. tilmelding</a></li>
+             <li><a href="#">Få besked om nye Madskoler</a></li>
+           </ul>
+         </div>
+
+         <div class="footer-col">
+           <h4>Bliv instruktør</h4>
+           <ul class="footer-links">
+             <li><a href="#">Gør en forskel</a></li>
+             <li><a href="#">At være madskoleinstruktør</a></li>
+             <li><a href="#">Hvor afholdes Madskoler</a></li>
+             <li><a href="#">Tilmeld dig som instruktør</a></li>
+           </ul>
+           <h4>Sponsorer og ambassadører</h4>
+           <ul class="footer-links">
+             <li><a href="#">Fødevarestyrelsen</a></li>
+             <li><a href="#">Madskoleambassadører</a></li>
+             <li><a href="#">Danish Crown Beef</a></li>
+             <li><a href="#">Dansk Gartneri / Sæson</a></li>
+             <li><a href="#">Danske Æg</a></li>
+             <li><a href="#">F&H</a></li>
+             <li><a href="#">Danmarks Fiskerfriforening PO</a></li>
+             <li><a href="#">Lehngaard</a></li>
+             <li><a href="#">Mejeriernes Skolemælkordning</a></li>
+             <li><a href="#">Tulip Food Company</a></li>
+           </ul>
+         </div>
+
+         <div class="footer-col">
+           <h4>Nyheder</h4>
+           <ul class="footer-links">
+             <li><a href="#">Nyheder</a></li>
+           </ul>
+           <h4>Konktakt</h4>
+           <ul class="footer-links">
+             <li><a href="#">Spørgsmål & Svar</a></li>
+             <li><a href="#">Pressebilleder</a></li>
+             <li><a href="#">Madskole Logo</a></li>
+             <li><a href="#">Få besked om nye Madskoler</a></li>
+           </ul>
+           <img src="img/footer-img.png" alt="">
+         </div>
+         <!--Footer links end-->
+       </div>
+     </div>
+   </footer>
+   <!--Footer end-->
+
+  </body>
+</html>
