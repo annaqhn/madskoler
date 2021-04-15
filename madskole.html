@@ -3,23 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Madskoler.dk</title>
+    <script src=madskole.js></script>
     <link rel="stylesheet" type="text/css" href="madskole.css">
   </head>
   <body>
-
 
     <!--Header start-->
     <header>
       <!--Website Logo start-->
       <div class="logo">
-        <a href="#logo">
+        <a href="madskole.html">
           <img class="logo" alt="logo" src="img/madskoler-logo.svg" align="left">
         </a>
       </div>
       <!--Website Logo end-->
+
       <!--Instruktør login start-->
-      <button class="button"><span> Instruktør login </span></button>
+      <button class="button" onclick="openForm()"><span>Instruktør login</span></button>
       <!--Instruktør login end-->
+
       <!--Navigation start-->
       <nav>
         <ul class="nav-links">
@@ -37,6 +39,26 @@
       <!--Navigation end-->
     </header>
     <!--Header end-->
+
+
+    <!--Login popup start-->
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <img src="img/cross-x.png" alt="" class="btn-cancel" onclick="closeForm()","return()">
+        <h3 class="login-popup">Log ind</h3>
+
+        <div class="wrapper">
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Indsæt email" name="email" id="email" required>
+
+          <label for="password"><b>Kodeord</b></label>
+          <input type="password"  placeholder="Kodeord" id="password" required>
+        </div>
+        <button type="submit" class="btn">Log ind</button>
+        <a href="main/ForgotPassword">Glemt kodeord</a>
+      </form>
+    </div>
+    <!--Login popup end-->
 
 
     <!--image slider start-->
@@ -65,7 +87,11 @@
         <h1>GØR EN FORSKEL - BLIV FRIVILLIG</h1>
         <p class="overlay-text">Gør en forskel - bliv Madskoleinstruktør! Vi vil rigtig gerne have dig med på holdet!</p>
         <!--Overlay slideshow end-->
-      <button class="button-overlay"><span> Tilmeld dig som frivillig </span></button>
+      <button class="button-overlay">
+        <a href="info.html">
+          Tilmeld dig som frivillig
+        </a>
+      </button>
         <!--slide images end-->
       </div>
 
@@ -80,18 +106,6 @@
       <!--manual navigation end-->
     </div>
     <!--image slider end-->
-    <!--JS navigation start-->
-    <script type="text/javascript">
-    var counter = 1;
-    setInterval(function(){
-      document.getElementById('radio' + counter).checked = true;
-      counter++;
-      if(counter > 4){
-        counter = 1;
-      }
-    }, 5000);
-    </script>
-    <!--JS navigation end-->
 
 
     <!--Madskole search start-->
