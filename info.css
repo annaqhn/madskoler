@@ -107,7 +107,6 @@ nav{
 }
 
 
-
 /*Login text*/
 .login-popup{
   font-size: 25px;
@@ -175,8 +174,9 @@ nav{
   float: right;
   margin-top: -50px;
   margin-right: 40px;
-
+  cursor: pointer;
 }
+
 
 /*Glemt kodeord*/
 .form-container a {
@@ -216,7 +216,7 @@ nav{
 
 /*Bredcrumbs*/
 .breadcrumbs{
-  padding: 10px;
+  padding: 20px;
 }
 
 .breadcrumbs-iteams{
@@ -324,6 +324,7 @@ nav{
   overflow:hidden;
   min-height:170px;
   font-family: "Arial", sans-serif;
+  margin: 20px;
 }
 
 .info-container h4{
@@ -336,24 +337,22 @@ font-size: 18px;
 
 
 .btn{
-  font-size: 13px;
-  font-weight: 600;
   margin-top:15px;
   position: relative;
   padding:10px;
   border-radius:5px;
   border:none;
   background-color: #129a55;
-  color: #fff;
   height: 5vh;
   width:200px;
 }
 
-.btn:hover{
-  cursor: pointer;
-  background-color: #0c7540;
+.btn a{
   color: white;
+  font-size: 13px;
+  font-weight: 600;
 }
+
 
 .info-p{
   margin-top: 20px;
@@ -369,6 +368,14 @@ font-size: 18px;
   background-color: #129a55;
   width: auto;
   margin: auto;
+}
+
+.footer-col li a:hover{
+  text-decoration: underline;
+}
+
+.footer-col1 li a:hover{
+  text-decoration: underline;
 }
 
 h4{

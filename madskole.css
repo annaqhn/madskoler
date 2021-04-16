@@ -80,9 +80,7 @@ h1{
   border-radius: 3px;
   background-color: #129a55;
   border: none;
-  color: white;
   text-align: center;
-  font-size: 13px;
   font-weight: 600;
   font-family: "Arial", sans-serif;
   width: 190px;
@@ -96,6 +94,11 @@ h1{
   right: 0;
   text-align: center;
   }
+
+.button-overlay a{
+  color: white;
+  font-size: 13px;
+}
 
 
 /*Instruktør login*/
@@ -222,8 +225,9 @@ nav{
   float: right;
   margin-top: -50px;
   margin-right: 40px;
-
+  cursor: pointer;
 }
+
 
 /*Glemt kodeord*/
 .form-container a {
@@ -258,6 +262,8 @@ nav{
   color: #9a9a9a;
   font-weight: 400;
 }
+
+
 
 
 /*Slideshow*/
@@ -427,8 +433,8 @@ p{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 450px;
-  height: 550px;
+  width: 400px;
+  height: 500px;
   border-radius: 4px;
   background-color: #F8F8F8;
   text-align: center;
@@ -448,6 +454,11 @@ p{
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
+}
+
+.img-area img{
+  width: 320px;
+  height: 220px;
 }
 
 .box-btn{
@@ -473,6 +484,14 @@ p{
   background-color: #129a55;
   width: auto;
   margin: auto;
+}
+
+.footer-col li a:hover{
+  text-decoration: underline;
+}
+
+.footer-col1 li a:hover{
+  text-decoration: underline;
 }
 
 h4{
