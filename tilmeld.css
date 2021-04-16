@@ -1,13 +1,15 @@
-@media(max-width:1330px){
+@media(max-width:1250px){
   nav{
-    display: none;
-  }
-  .button{
     display: none;
   }
   .header-line{
     margin-top: 14px;
   }
+
+  .button{
+    display: none;
+  }
+
   .logo{
   float: initial;
   margin-left: auto;
@@ -19,8 +21,8 @@
   .footer-col{
     display: none;
   }
-
 }
+
 
 * {
   box-sizing: border-box;
@@ -29,7 +31,7 @@
 }
 
 body{
-  background-color: #f8f8f8;
+  background-color: white;
   margin: 0;
   padding: 0;
   justify-content: center;
@@ -48,7 +50,6 @@ header{
   width: 220px;
 }
 
-
 /*Instruktør login*/
 .button {
   border-radius: 3px;
@@ -62,17 +63,22 @@ header{
   width: 140px;
   height: 38px;
   cursor: pointer;
-  margin-top: 34px;
-  margin-right: 30px;
-  margin-left: 20px;
-  float: right;
-  }
+  margin-top: 20px;
+  margin-right: 35px;
+  margin-left: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 
 /*Navigation*/
+nav{
+  font-weight: 600;
+}
+
 .nav-links li, a {
   font-family: "Arial", sans-serif;
-  font-weight: 500;
   font-size: 16px;
   color: #4e5359;
   text-decoration: none;
@@ -99,194 +105,120 @@ header{
   width: auto;
 }
 
-/*Madskole search*/
-.madskole-search{
-  width: 100%;
-  height: 280px;
-  background-color: #f8f8f8;
-}
 
-h2{
+
+/*Login text*/
+.login-popup{
+  font-size: 25px;
+  font-weight: 600;
   font-family: "Arial", sans-serif;
-  font-size: 30px;
-  text-align: center;
-  padding-top: 60px;
+  margin-top: 80px;
+  margin-left: 50px;
 }
 
-p{
-  font-family: "Arial", sans-serif;
-  font-size: 17px;
-  text-align: center;
-  padding-top: 20px;
-}
-
-/*Searchbar*/
-.wrap{
-  width: 30%;
-  margin: auto;
-  padding-top: 30px;
-}
-
-.search {
-  width: 100%;
-  position: relative;
-  display: flex;
-  padding-bottom: 77px;
-}
-
-.searchTerm {
-  width: 100%;
-  border: 3px solid white;
-  padding: 5px;
-  height: 40px;
-  outline: none;
-  color: #9DBFAF;
-}
-
-.searchTerm:focus{
-  color: black;
-}
-
-.searchButton {
-  width: 60px;
-  height: 40px;
-  border: 1px solid #00B4CC;
-  background: #129a55;
-  text-align: center;
-  color: #fff;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-/*Spomsorer*/
-.sponsorer{
+/* The popup form - hidden by default */
+.form-popup {
+  height: 500px;
+  width: 40%;
+  min-width: 400px;
   background-color: white;
-  width: 100%;
-  height: 150px;
+  display: none;
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.sponsor-img{
-  width: 300px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+/* Full-width input fields */
+.form-container input[type=text], input[type=password] {
+ width: 100%;
+ padding: 15px;
+ margin-top: 8px;
+ margin-bottom: 20px;
+ border: none;
+ background: #f1f1f1;
 }
 
-/*Information boxes*/
-.box-area{
-  background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  margin-bottom: 50px;
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, input[type=password]:focus {
+ background-color: #ddd;
+ outline: none;
 }
 
-.header-text{
-  padding-top: 50px;
-  font-family: "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.single-box{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 450px;
-  height: 550px;
-  border-radius: 4px;
-  background-color: #F8F8F8;
-  text-align: center;
-  margin: 20px;
-  padding: 30px;
-  transition: .3s;
-}
-
-.img-area{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 370px;
-  height: 270px;
-  margin-bottom: 30px;
-  padding: 20px;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-}
-
-.box-btn{
-  border-radius: 3px;
-  background-color: #129a55;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
+/*Login button */
+.form-container .btn {
   font-size: 13px;
   font-weight: 600;
   font-family: "Arial", sans-serif;
-  width: 250px;
-  cursor: pointer;
-  margin-top: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-/*Footer*/
-.footer-line{
-  border: 0;
-  height: 5px;
+  border-radius: 3px;
   background-color: #129a55;
-  width: auto;
-  margin: auto;
-  margin-top: 20px;
+  color: white;
+  padding: 16px 25px;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  margin-top: 2px;
+  margin-right: 15px;
+  margin-left: 50px;
 }
 
-h4{
-  font-family: "Arial", sans-serif;
-  font-size: 15px;
-  color: black;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-ul{
-  list-style: none;
-}
-
-footer{
+/*Cancel button */
+.btn-cancel {
   background-color: white;
-  width: 100%;
-  height: 550px;
-  padding: 30px 0;
-  line-height: 1.8;
-  letter-spacing: .5px;
+  height: 40px;
+  width: 40px;
+  float: right;
+  margin-top: -50px;
+  margin-right: 40px;
+  cursor: pointer;
 }
 
-.row{
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.footer-col{
-  width: 25%;
-  padding: 0 30px;
-}
-
-.footer-links li, a{
+/*Glemt kodeord*/
+.form-container a {
+  font-size: 14px;
   font-family: "Arial", sans-serif;
-  font-weight: 500px;
-  font-size: 15px;
-  color: black;
+  color: #86130E;
+  position: relative;
 }
+
+/*Input bars - email & kodeord*/
+.wrapper{
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  padding: 50px;
+}
+
+.form-container input{
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 3px;
+  font-family: "Arial", sans-serif;
+  color: #4a4a4a;
+  letter-spacing: 0.5px;
+  required="";
+}
+
+::placeholder{
+  color: #9a9a9a;
+  font-weight: 400;
+}
+
+
+
+
 
 /*tilmelding*/
 #wrapper{
-  background-color: white;
+  background-color: blue;
   width: 91%;
   height: 500px;
   left: 4%;
@@ -322,4 +254,72 @@ h1{
   width: 200px;
   left: 25%;
   top: 6%;
+}
+
+
+/*Footer*/
+.footer-line{
+  border: 0;
+  height: 5px;
+  background-color: #129a55;
+  width: auto;
+  margin: auto;
+}
+
+h4{
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  color: black;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+ul{
+  list-style: none;
+}
+
+footer{
+  background-color: white;
+  width: 100%;
+  height: 550px;
+  padding: 30px 0;
+  line-height: 1.8;
+  letter-spacing: .5px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row p{
+  font-family: "Arial", sans-serif;
+  font-weight: 500px;
+  font-size: 15px;
+  color: black;
+  text-align: left
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 30px;
+}
+
+.footer-col li, a{
+  font-family: "Arial", sans-serif;
+  font-weight: 500px;
+  font-size: 15px;
+  color: black;
+}
+
+.footer-col1{
+  width: 25%;
+  padding: 0 30px;
+}
+
+.footer-col1 li, a{
+  font-family: "Arial", sans-serif;
+  font-weight: 500px;
+  font-size: 15px;
+  color: black;
 }

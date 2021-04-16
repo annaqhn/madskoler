@@ -2,10 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madskoler.dk</title>
-    <link rel="stylesheet" type="text/css" href="tilmeld.css">
-    <script defer src="tilmeld.js"></script>
+    <script src=madskole.js></script>
+    <link rel="stylesheet" type="text/css" href="madskole.css">
   </head>
   <body>
 
@@ -13,14 +12,16 @@
     <header>
       <!--Website Logo start-->
       <div class="logo">
-        <a href="#logo">
+        <a href="madskole.html">
           <img class="logo" alt="logo" src="img/madskoler-logo.svg" align="left">
         </a>
       </div>
       <!--Website Logo end-->
+
       <!--Instruktør login start-->
-      <button class="button"><span> Instruktør login </span></button>
+      <button class="button" onclick="openForm()"><span>Instruktør login</span></button>
       <!--Instruktør login end-->
+
       <!--Navigation start-->
       <nav>
         <ul class="nav-links">
@@ -32,148 +33,162 @@
           <li><a href="#kontakt"> Kontakt </a> </li>
         </ul>
       </nav>
-      <!--Navigation end-->
       <!--Header line start-->
       <hr class="header-line">
       <!--Header line end-->
+      <!--Navigation end-->
     </header>
     <!--Header end-->
 
-    <!--image slider start-->
-    <div id="wrapper">
-      <a href="index.html"><img class="arrow" src="arrow2.png" alt="arrow"></a></li>
-      <h1>Instruktørtilmelding</h1>
-      <form method="POST" action="bg.html" onsubmit="return validate()" name="vform" class="move">
-        <div>
-          <input type="text" name="fname" class="text" placeholder="Fulde navn">
-          <div id="name_error"></div>
+    <!--Login popup start-->
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <img src="img/cross-x.png" alt="" class="btn-cancel" onclick="closeForm()","return()">
+        <h3 class="login-popup">Log ind</h3>
+
+        <div class="wrapper">
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Indsæt email" name="email" id="email" required>
+
+          <label for="password"><b>Kodeord</b></label>
+          <input type="password"  placeholder="Kodeord" id="password" required>
         </div>
-        <div>
-          <input type="text" name="postnr" class="text" placeholder="Postnr">
-          <div id="post_error"></div>
+        <button type="submit" class="btn">Log ind</button>
+        <a href="main/ForgotPassword">Glemt kodeord</a>
+      </form>
+    </div>
+    <!--Login popup end-->
+
+
+
+    <!--tilmeldingsformularen start-->
+      <div id="wrapper">
+        <a href="info.html"><img class="arrow" src="img/arrow.png" alt="arrow"></a>
+        <h1>Instruktørtilmelding</h1>
+        <form method="POST" action="bg.html" onsubmit="return validate()" name="vform" class="move">
+          <div>
+            <input type="text" name="fname" class="text" placeholder="Fulde navn">
+            <div id="name_error"></div>
+          </div>
+          <div>
+            <input type="text" name="postnr" class="text" placeholder="Postnr">
+            <div id="post_error"></div>
+          </div>
+          <div>
+            <input type="text" name="city" class="text" placeholder="By">
+            <div id="city_error"></div>
+          </div>
+          <div>
+            <input type="number" name="phone" class="text" placeholder="Telefon">
+            <div id="phone_error"></div>
+          </div>
+          <div>
+            <input type="email" name="email" class="text" placeholder="Email">
+            <div id="email_error"></div>
+          </div>
+          <div>
+            <input type="number" name="birth" class="text" placeholder="Fødselsdag">
+            <div id="birth_error"></div>
+          </div>
+          <div>
+            <input type="number" name="cpr" class="text" placeholder="CPR">
+            <div id="cpr_error"></div>
+          </div>
+          <div>
+            <input type="text" name="kommune" class="text" placeholder="Vælg kommune hvor du vil være instruktør">
+            <div id="c_error"></div>
+          </div>
+          <input type="submit" value="tilmeld" class="button" name="register">
         </div>
-        <div>
-          <input type="text" name="city" class="text" placeholder="By">
-          <div id="city_error"></div>
+      <!--tilmeldingsformularen end-->
+
+
+
+
+
+    <!--Footer start-->
+    <!--Footer line start-->
+    <hr class="footer-line">
+    <!--Footer line end-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!--Footer links start-->
+          <div class="footer-col1">
+            <h4>Madskoler</h4>
+            <p>33 39 42 77</p>
+            <ul class="footer-links">
+              <li><a href="#">madskoler@4h.dk</a></li>
+              <br>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Cookiepolitik</a></li>
+              <br>
+              <li><a href="#">Privatlispolitik</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Om Madskoler</h4>
+            <ul class="footer-links">
+              <li><a href="#">Madskoler kort fortalt</a></li>
+              <li><a href="#">Hvad er Madskoler?</a></li>
+              <li><a href="#">Etniske Madskoler</a></li>
+              <li><a href="#">Ungdomsmadskoler</a></li>
+              <li><a href="#">3 dage med Madskoler</a></li>
+              <li><a href="#">Praktiske oplysninger</a></li>
+              <li><a href="#">Maden på Madskoler</a></li>
+              <li><a href="#">Salgs- og leverings betingelser</a></li>
+            </ul>
+            <h4>Tilmeld dit barn</h4>
+            <ul class="footer-links">
+              <li><a href="#">Liste over Madskoler</a></li>
+              <li><a href="#">Kort over Madskoler</a></li>
+              <li><a href="#">Spørgsmål vedr. tilmelding</a></li>
+              <li><a href="#">Få besked om nye Madskoler</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Bliv instruktør</h4>
+            <ul class="footer-links">
+              <li><a href="#">Gør en forskel</a></li>
+              <li><a href="#">At være madskoleinstruktør</a></li>
+              <li><a href="#">Hvor afholdes Madskoler</a></li>
+              <li><a href="#">Tilmeld dig som instruktør</a></li>
+            </ul>
+            <h4>Sponsorer og ambassadører</h4>
+            <ul class="footer-links">
+              <li><a href="#">Fødevarestyrelsen</a></li>
+              <li><a href="#">Madskoleambassadører</a></li>
+              <li><a href="#">Danish Crown Beef</a></li>
+              <li><a href="#">Dansk Gartneri / Sæson</a></li>
+              <li><a href="#">Danske Æg</a></li>
+              <li><a href="#">F&H</a></li>
+              <li><a href="#">Danmarks Fiskerfriforening PO</a></li>
+              <li><a href="#">Lehngaard</a></li>
+              <li><a href="#">Mejeriernes Skolemælkordning</a></li>
+              <li><a href="#">Tulip Food Company</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Nyheder</h4>
+            <ul class="footer-links">
+              <li><a href="#">Nyheder</a></li>
+            </ul>
+            <h4>Konktakt</h4>
+            <ul class="footer-links">
+              <li><a href="#">Spørgsmål & Svar</a></li>
+              <li><a href="#">Pressebilleder</a></li>
+              <li><a href="#">Madskole Logo</a></li>
+              <li><a href="#">Få besked om nye Madskoler</a></li>
+            </ul>
+            <img src="img/footer-img.png" alt="" class="footer-img">
+          </div>
+          <!--Footer links end-->
         </div>
-        <div>
-          <input type="number" name="phone" class="text" placeholder="Telefon">
-          <div id="phone_error"></div>
-        </div>
-        <div>
-          <input type="email" name="email" class="text" placeholder="Email">
-          <div id="email_error"></div>
-        </div>
-        <div>
-          <input type="number" name="birth" class="text" placeholder="Fødselsdag">
-          <div id="birth_error"></div>
-        </div>
-        <div>
-          <input type="number" name="cpr" class="text" placeholder="CPR">
-          <div id="cpr_error"></div>
-        </div>
-        <div>
-          <input type="text" name="kommune" class="text" placeholder="Vælg kommune hvor du vil være instruktør">
-          <div id="c_error"></div>
-        </div>
-        <input type="submit" value="tilmeld" class="button" name="register">
       </div>
-    <!--image slider end-->
-
-    <script type="text/javascript">
-    var counter = 1;
-    setInterval(function(){
-      document.getElementById('radio' + counter).checked = true;
-      counter++;
-      if(counter > 4){
-        counter = 1;
-      }
-    }, 5000);
-    </script>
-
-       <!--Footer line start-->
-       <hr class="footer-line">
-       <!--Footer line end-->
-       <footer>
-         <div class="container">
-           <div class="row">
-             <!--Footer links start-->
-             <div class="footer-col">
-               <h4>Madskoler</h4>
-               33 39 42 77
-               <ul class="footer-links">
-                 <li><a href="#">madskoler@4h.dk</a></li>
-                 <br>
-                 <li><a href="#">Copyright</a></li>
-                 <li><a href="#">Cookiepolitik</a></li>
-                 <br>
-                 <li><a href="#">Privatlispolitik</a></li>
-               </ul>
-             </div>
-
-             <div class="footer-col">
-               <h4>Om Madskoler</h4>
-               <ul class="footer-links">
-                 <li><a href="#">Madskoler kort fortalt</a></li>
-                 <li><a href="#">Hvad er Madskoler?</a></li>
-                 <li><a href="#">Etniske Madskoler</a></li>
-                 <li><a href="#">Ungdomsmadskoler</a></li>
-                 <li><a href="#">3 dage med Madskoler</a></li>
-                 <li><a href="#">Praktiske oplysninger</a></li>
-                 <li><a href="#">Maden på Madskoler</a></li>
-                 <li><a href="#">Salgs- og leverings betingelser</a></li>
-               </ul>
-               <h4>Tilmeld dit barn</h4>
-               <ul class="footer-links">
-                 <li><a href="#">Liste over Madskoler</a></li>
-                 <li><a href="#">Kort over Madskoler</a></li>
-                 <li><a href="#">Spørgsmål vedr. tilmelding</a></li>
-                 <li><a href="#">Få besked om nye Madskoler</a></li>
-               </ul>
-             </div>
-
-             <div class="footer-col">
-               <h4>Bliv instruktør</h4>
-               <ul class="footer-links">
-                 <li><a href="#">Gør en forskel</a></li>
-                 <li><a href="#">At være madskoleinstruktør</a></li>
-                 <li><a href="#">Hvor afholdes Madskoler</a></li>
-                 <li><a href="#">Tilmeld dig som instruktør</a></li>
-               </ul>
-               <h4>Sponsorer og ambassadører</h4>
-               <ul class="footer-links">
-                 <li><a href="#">Fødevarestyrelsen</a></li>
-                 <li><a href="#">Madskoleambassadører</a></li>
-                 <li><a href="#">Danish Crown Beef</a></li>
-                 <li><a href="#">Dansk Gartneri / Sæson</a></li>
-                 <li><a href="#">Danske Æg</a></li>
-                 <li><a href="#">F&H</a></li>
-                 <li><a href="#">Danmarks Fiskerfriforening PO</a></li>
-                 <li><a href="#">Lehngaard</a></li>
-                 <li><a href="#">Mejeriernes Skolemælkordning</a></li>
-                 <li><a href="#">Tulip Food Company</a></li>
-               </ul>
-             </div>
-
-             <div class="footer-col">
-               <h4>Nyheder</h4>
-               <ul class="footer-links">
-                 <li><a href="#">Nyheder</a></li>
-               </ul>
-               <h4>Konktakt</h4>
-               <ul class="footer-links">
-                 <li><a href="#">Spørgsmål & Svar</a></li>
-                 <li><a href="#">Pressebilleder</a></li>
-                 <li><a href="#">Madskole Logo</a></li>
-                 <li><a href="#">Få besked om nye Madskoler</a></li>
-               </ul>
-               <img src="img/footer-img.png" alt="">
-             </div>
-             <!--Footer links end-->
-           </div>
-         </div>
-       </footer>
-
-
+    </footer>
+    <!--Footer end-->
   </body>
 </html>
