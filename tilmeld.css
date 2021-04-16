@@ -97,6 +97,7 @@ nav{
   padding-top:57px;
 }
 
+
 /*Green Line*/
 .header-line{
   border: 0;
@@ -104,6 +105,7 @@ nav{
   background-color: #129a55;
   width: auto;
 }
+
 
 
 /*Login text*/
@@ -235,18 +237,11 @@ nav{
   padding: 50px;
 }
 
-form{
-  width: 50%;
-  margin: 100px auto;
-  margin-top: 70px;
-  line-height: 50px;
-}
-
 form div{
   margin: 3px auto;
 }
 
-.text{
+.text1{
   margin-top: 2px;
   height: 40px;
   border: 1px solid #5e6e66;
@@ -258,6 +253,10 @@ form div{
 
 .move{
   position: relative;
+  width: 50%;
+  margin: 100px auto;
+  margin-top: 70px;
+  line-height: 50px;
 }
 
 h1{
