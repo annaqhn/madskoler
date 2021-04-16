@@ -218,11 +218,179 @@ nav{
 
 
 
+/*Progressbar*/
+.hidden{
+  display: none;
+}
+
+.btn{
+  font-size: 13px;
+  font-weight: bold;
+  margin-top:15px;
+  position: relative;
+  border-radius:3px;
+  border:none;
+  background-color: #129a55;
+  color: #fff;
+  height: 40px;
+  width:150px;
+  cursor: pointer;
+}
+
+
+.btn:disabled:hover{
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #4E5359;
+}
+
+.text-align{
+  text-align: center;
+}
+
+.container1{
+  max-width: 770px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+/*Progressbar start*/
+#progresBar{
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.step-text{
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+}
+
+.bullet{
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  display: inline-block;
+  position: relative;
+  background-color: #838991;
+  transition: #838991 500ms;
+  line-height: 20px;
+  align-items: center;
+}
+
+.bullet-search{
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  display: inline-block;
+  position: relative;
+  background-color: #838991;
+  transition: #838991 500ms;
+  line-height: 20px;
+  align-items: center;
+}
+
+.bullet::before{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 135px;
+  background-color: #838991;
+  top: 8.5px;
+  right: -134px;
+  bottom: 10px;
+}
+
+.bullet.completed{
+  background-color: #129A55;
+}
+
+.bullet.completed::after{
+  content: '';
+  position: absolute;
+  height: 6px;
+  width: 135px;
+  background-color: #129A55;
+  right: -134px;
+  bottom: 10px;
+}
+/*Progressbar slut*/
+
+/*Popup start*/
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup{
+  width: 350px;
+  height: 280px;
+  padding: 30px 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-sizing: border-box;
+  z-index: 2;
+  text-align: center;
+  opacity: 0;
+  top: -200px;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: opacity 300ms ease-in-out,
+              top 1000ms ease-in-out,
+              transform 1000ms ease-in-out;
+}
+
+.popup.active{
+  opacity: 1;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
+}
+
+.popup .icon{
+  margin-left: 5px 0px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #34f234;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 60px;
+}
+
+.popup .icon i.fas{
+  font-size: 30px;
+  color: #34f234;
+}
+
+.popup .title{
+  margin-left: 5px 0px;
+  font-size: 30px;
+  font-weight: 600px;
+}
+
+.popup .description{
+  color: #222;
+  font-size: 15px;
+}
+
+/*Popup slut*/
+
+
+
+
+
 /*tilmelding*/
 .tilmeld-div{
   background-color: #eee;
   width: 100%;
-  height: 900px;
+  height: 1300px;
   padding: 50px;
 }
 
@@ -230,9 +398,10 @@ nav{
   border-radius: 5px;
   background-color: white;
   width: 90%;
-  min-width: 700px;
-  height: 800px;
-  left: 4%;
+  min-width: 1000px;
+  height: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   padding: 50px;
 }
@@ -253,10 +422,10 @@ form div{
 
 .move{
   position: relative;
-  width: 50%;
+  width: 80%;
   margin: 100px auto;
-  margin-top: 70px;
-  line-height: 50px;
+  margin-top: 50px;
+  line-height: 20px;
 }
 
 h1{
@@ -264,8 +433,16 @@ h1{
   font-size: 25px;
   position: relative;
   width: 200px;
-  left: 25%;
-  top: 6%;
+  margin-left: 9.7%;
+  margin-top: -35px;
+  margin-bottom: 90px;
+}
+
+.move p{
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding-top: 10px;
 }
 
 .arrow{

@@ -61,41 +61,119 @@
 
 
 
+
+
     <!--tilmeldingsformularen start-->
     <div class="tilmeld-div">
       <div id="wrapper1">
         <a href="info.html"><img class="arrow" src="img/arrow.png" alt="arrow"></a>
         <h1>Instruktørtilmelding</h1>
+        <!-- Progressbar start -->
+        <div class="container1">
+          <div id="progresBar">
+            <div class="step">
+              <div class="bullet"></div>
+                <p class="step-text">Navn</p>
+            </div>
+
+            <div class="step">
+              <div class="bullet"></div>
+                <p class="step-text">Postnr.</p>
+            </div>
+
+            <div class="step">
+              <div class="bullet"></div>
+                <p class="step-text">By</p>
+            </div>
+
+            <div class="step">
+              <div class="bullet"></div>
+                <p class="step-text">Telefon</p>
+            </div>
+
+            <div class="step">
+              <div class="bullet"></div>
+                <p class="step-text">E-mail</p>
+            </div>
+
+            <div class="step">
+              <div class="bullet"></div>
+                <p class="step-text">Fødselsdag</p>
+            </div>
+
+            <div class="step">
+              <div class="bullet-search"></div>
+                <p class="step-text">Kommune</p>
+            </div>
+          </div>
+
+
+          <div id="main">
+            <p id="content"></p>
+            <button class="btn" id="previousBtn" disabled>Tilbage</button>
+            <button class="btn" id="nextBtn">Næste</button>
+            <button class="btn" id="finishBtn" disabled>Tilmeld</button>
+          </div>
+        </div>
+        <!-- Progressbar slut-->
+
+        <!-- Popup start-->
+        <div class="popup center">
+          <div class="icon">
+            <i class="fas fa-check"></i>
+          </div>
+
+          <div class="title">
+            <p>Succes</p>
+          </div>
+
+          <div class="description">
+            <p>Din tilmelding er hermed sendt afsted</p>
+          </div>
+
+          <button class="btn" id="dismissBtn">Luk</button>
+        </div>
+        <!-- Popup slut-->
+
+
         <form method="POST" action="bg.html" onsubmit="return validate()" name="vform" class="move">
           <div>
+            <p>Fulde navn</p>
             <input type="text" name="fname" class="text1" placeholder="Fulde navn">
             <div id="name_error"></div>
           </div>
           <div>
+            <p>Postnr</p>
             <input type="text" name="postnr" class="text1" placeholder="Postnr">
             <div id="post_error"></div>
           </div>
           <div>
+            <p>By</p>
             <input type="text" name="city" class="text1" placeholder="By">
             <div id="city_error"></div>
           </div>
           <div>
+            <p>Telefon</p>
             <input type="number" name="phone" class="text1" placeholder="Telefon">
             <div id="phone_error"></div>
           </div>
           <div>
+            <p>Email</p>
             <input type="email" name="email" class="text1" placeholder="Email">
             <div id="email_error"></div>
           </div>
           <div>
+            <p>Fødselsdag</p>
             <input type="number" name="birth" class="text1" placeholder="Fødselsdag">
             <div id="birth_error"></div>
           </div>
           <div>
+            <p>CPR</p>
             <input type="number" name="cpr" class="text1" placeholder="CPR">
             <div id="cpr_error"></div>
           </div>
           <div>
+            <p>Kommune</p>
             <input type="text" name="kommune" class="text1" placeholder="Vælg kommune hvor du vil være instruktør">
             <div id="c_error"></div>
           </div>

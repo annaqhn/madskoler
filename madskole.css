@@ -372,7 +372,7 @@ p{
 
 .searchTerm {
   width: 100%;
-  border: 3px solid white;
+border: 1px solid #5e6e66;
   padding: 5px;
   height: 40px;
   outline: none;
@@ -386,7 +386,7 @@ p{
 .searchButton {
   width: 60px;
   height: 40px;
-  border: 1px solid #00B4CC;
+  border: 1px solid #129a55;
   background: #129a55;
   text-align: center;
   color: #fff;
@@ -407,6 +407,9 @@ p{
   margin-left: auto;
   margin-right: auto;
 }
+
+
+
 
 /*Information boxes*/
 .box-area{
@@ -441,6 +444,10 @@ p{
   margin: 20px;
   padding: 30px;
   transition: .3s;
+}
+
+.single-box:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
 .img-area{
