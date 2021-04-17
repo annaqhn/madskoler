@@ -272,8 +272,8 @@ nav{
 }
 
 .bullet{
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   border-radius: 100%;
   display: inline-block;
   position: relative;
@@ -284,8 +284,8 @@ nav{
 }
 
 .bullet-search{
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   border-radius: 100%;
   display: inline-block;
   position: relative;
@@ -301,7 +301,6 @@ nav{
   height: 3px;
   width: 135px;
   background-color: #838991;
-  top: 8.5px;
   right: -134px;
   bottom: 10px;
 }
@@ -313,7 +312,7 @@ nav{
 .bullet.completed::after{
   content: '';
   position: absolute;
-  height: 6px;
+  height: 3px;
   width: 135px;
   background-color: #129A55;
   right: -134px;
