@@ -235,8 +235,24 @@ nav{
   height: 40px;
   width:150px;
   cursor: pointer;
+  margin-top: 20px;
 }
 
+
+.popup center .btn{
+  font-size: 13px;
+  font-weight: bold;
+  margin-top:15px;
+  position: relative;
+  border-radius:3px;
+  border:none;
+  background-color: #129a55;
+  color: #fff;
+  height: 40px;
+  width:150px;
+  cursor: pointer;
+  margin-top: 20px;
+}
 
 .btn:disabled:hover{
   opacity: 0.6;
@@ -277,7 +293,7 @@ nav{
   border-radius: 100%;
   display: inline-block;
   position: relative;
-  background-color: #838991;
+  background-color: #DEDEDE;
   transition: #838991 500ms;
   line-height: 20px;
   align-items: center;
@@ -289,8 +305,8 @@ nav{
   border-radius: 100%;
   display: inline-block;
   position: relative;
-  background-color: #838991;
-  transition: #838991 500ms;
+  background-color: #DEDEDE;
+  transition: #DEDEDE 500ms;
   line-height: 20px;
   align-items: center;
 }
@@ -298,9 +314,9 @@ nav{
 .bullet::before{
   content: '';
   position: absolute;
-  height: 3px;
+  height: 4px;
   width: 135px;
-  background-color: #838991;
+  background-color: #DEDEDE;
   right: -134px;
   bottom: 10px;
 }
@@ -356,7 +372,7 @@ nav{
   margin-left: 5px 0px;
   width: 50px;
   height: 50px;
-  border: 2px solid #34f234;
+  border: 2px solid #129a55;
   text-align: center;
   display: inline-block;
   border-radius: 50%;
@@ -365,18 +381,22 @@ nav{
 
 .popup .icon i.fas{
   font-size: 30px;
-  color: #34f234;
+  color: #129a55;
 }
 
 .popup .title{
   margin-left: 5px 0px;
   font-size: 30px;
   font-weight: 600px;
+  font-family: "Arial", sans-serif;
+  margin: 10px;
 }
 
 .popup .description{
   color: #222;
   font-size: 15px;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
 }
 
 /*Popup slut*/
