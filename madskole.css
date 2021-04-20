@@ -1,0 +1,560 @@
+@media(max-width:1250px){
+  nav{
+    display: none;
+  }
+  .header-line{
+    margin-top: 14px;
+  }
+
+  .button{
+    display: none;
+  }
+
+  .logo{
+  float: initial;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+@media(max-width:1150px){
+  .footer-col{
+    display: none;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  background-color: white;
+  height: 90px;
+}
+
+/*Website logo*/
+.logo{
+  margin-left: 20px;
+  margin-top: 15px;
+  width: 220px;
+}
+
+/*Overlay slideshow*/
+h1{
+  font-family: "Arial", sans-serif;
+  color: white;
+  margin-top: 20%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.overlay-text{
+  font-family: "Arial", sans-serif;
+  color: white;
+  margin-top: 22%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.button-overlay{
+  position: absolute;
+  border-radius: 3px;
+  background-color: #129a55;
+  border: none;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Arial", sans-serif;
+  width: 190px;
+  height: 38px;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  }
+
+.button-overlay a{
+  color: white;
+  font-size: 13px;
+}
+
+
+/*Instruktør login*/
+.button {
+  border-radius: 3px;
+  background-color: #129a55;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Arial", sans-serif;
+  width: 140px;
+  height: 38px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 35px;
+  margin-left: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+/*Navigation*/
+nav{
+  font-weight: 600;
+}
+
+.nav-links li, a {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #4e5359;
+  text-decoration: none;
+}
+
+.nav-links{
+  list-style: none;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+  margin-bottom: 10px;
+  padding-top:57px;
+}
+
+/*Green Line*/
+.header-line{
+  border: 0;
+  height: 5px;
+  background-color: #129a55;
+  width: auto;
+}
+
+
+
+/*Login text*/
+.login-popup{
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Arial", sans-serif;
+  margin-top: 80px;
+  margin-left: 50px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  height: 500px;
+  width: 40%;
+  min-width: 400px;
+  background-color: white;
+  display: none;
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Full-width input fields */
+.form-container input[type=text], input[type=password] {
+ width: 100%;
+ padding: 15px;
+ margin-top: 8px;
+ margin-bottom: 20px;
+ border: none;
+ background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, input[type=password]:focus {
+ background-color: #ddd;
+ outline: none;
+}
+
+/*Login button */
+.form-container .btn {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Arial", sans-serif;
+  border-radius: 3px;
+  background-color: #129a55;
+  color: white;
+  padding: 16px 25px;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  margin-top: 2px;
+  margin-right: 15px;
+  margin-left: 50px;
+}
+
+/*Cancel button */
+.btn-cancel {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  float: right;
+  margin-top: -50px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+
+/*Glemt kodeord*/
+.form-container a {
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  color: #86130E;
+  position: relative;
+}
+
+/*Input bars - email & kodeord*/
+.wrapper{
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  padding: 50px;
+}
+
+.form-container input{
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 3px;
+  font-family: "Arial", sans-serif;
+  color: #4a4a4a;
+  letter-spacing: 0.5px;
+  required="";
+}
+
+::placeholder{
+  color: #9a9a9a;
+  font-weight: 400;
+}
+
+
+
+
+/*Slideshow*/
+.slider{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+/*Manual slide navigation*/
+.navigation-manual{
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: white;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+
+/*Madskole search*/
+.madskole-search{
+  width: 100%;
+  height: 280px;
+  background-color: #f8f8f8;
+}
+
+h2{
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+p{
+  font-family: "Arial", sans-serif;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*Searchbar*/
+.wrap{
+  width: 30%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  padding-bottom: 77px;
+}
+
+.searchTerm {
+  width: 100%;
+border: 1px solid #5e6e66;
+  padding: 5px;
+  height: 40px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  width: 60px;
+  height: 40px;
+  border: 1px solid #129a55;
+  background: #129a55;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/*Sponsorer*/
+.sponsorer{
+  background-color: white;
+  width: 100%;
+  height: 150px;
+}
+
+.sponsor-img{
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+/*Information boxes*/
+.box-area{
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.header-text{
+  padding-top: 50px;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.single-box{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+  border-radius: 4px;
+  background-color: #F8F8F8;
+  text-align: center;
+  margin: 20px;
+  padding: 30px;
+  transition: .3s;
+}
+
+.single-box:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.img-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 270px;
+  margin-bottom: 30px;
+  padding: 20px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.img-area img{
+  width: 320px;
+  height: 220px;
+}
+
+.box-btn{
+  border-radius: 3px;
+  background-color: #129a55;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Arial", sans-serif;
+  width: 250px;
+  cursor: pointer;
+  margin-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*Footer*/
+.footer-line{
+  border: 0;
+  height: 5px;
+  background-color: #129a55;
+  width: auto;
+  margin: auto;
+}
+
+.footer-col li a:hover{
+  text-decoration: underline;
+}
+
+.footer-col1 li a:hover{
+  text-decoration: underline;
+}
+
+h4{
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  color: black;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+ul{
+  list-style: none;
+}
+
+footer{
+  background-color: white;
+  width: 100%;
+  height: 550px;
+  padding: 30px 0;
+  line-height: 1.8;
+  letter-spacing: .5px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row p{
+  font-family: "Arial", sans-serif;
+  font-weight: 500px;
+  font-size: 15px;
+  color: black;
+  text-align: left
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 30px;
+}
+
+.footer-col li, a{
+  font-family: "Arial", sans-serif;
+  font-weight: 500px;
+  font-size: 15px;
+  color: black;
+}
+
+.footer-col1{
+  width: 25%;
+  padding: 0 30px;
+}
+
+.footer-col1 li, a{
+  font-family: "Arial", sans-serif;
+  font-weight: 500px;
+  font-size: 15px;
+  color: black;
+}

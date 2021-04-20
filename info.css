@@ -1,0 +1,437 @@
+
+@media(max-width:1250px){
+  nav{
+    display: none;
+  }
+  .header-line{
+    margin-top: 14px;
+  }
+
+  .button{
+    display: none;
+  }
+
+  .logo{
+  float: initial;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+@media(max-width:1150px){
+  .footer-col{
+    display: none;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  background-color: white;
+  height: 90px;
+}
+
+/*Website logo*/
+.logo{
+  margin-left: 20px;
+  margin-top: 15px;
+  width: 220px;
+}
+
+/*Instruktør login*/
+.button {
+  border-radius: 3px;
+  background-color: #129a55;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Arial", sans-serif;
+  width: 140px;
+  height: 38px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 35px;
+  margin-left: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+/*Navigation*/
+nav{
+  font-weight: 600;
+}
+
+.nav-links li, a {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #4e5359;
+  text-decoration: none;
+}
+
+.nav-links{
+  list-style: none;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+  margin-bottom: 10px;
+  padding-top:57px;
+}
+
+/*Green Line*/
+.header-line{
+  border: 0;
+  height: 5px;
+  background-color: #129a55;
+  width: auto;
+}
+
+
+/*Login text*/
+.login-popup{
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Arial", sans-serif;
+  margin-top: 80px;
+  margin-left: 50px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  height: 500px;
+  width: 40%;
+  min-width: 400px;
+  background-color: white;
+  display: none;
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Full-width input fields */
+.form-container input[type=text], input[type=password] {
+ width: 100%;
+ padding: 15px;
+ margin-top: 8px;
+ margin-bottom: 20px;
+ border: none;
+ background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, input[type=password]:focus {
+ background-color: #ddd;
+ outline: none;
+}
+
+/*Login button */
+.form-container .btn {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Arial", sans-serif;
+  border-radius: 3px;
+  background-color: #129a55;
+  color: white;
+  padding: 16px 25px;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  margin-top: 2px;
+  margin-right: 15px;
+  margin-left: 50px;
+}
+
+/*Cancel button */
+.btn-cancel {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  float: right;
+  margin-top: -50px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+
+/*Glemt kodeord*/
+.form-container a {
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  color: #86130E;
+  position: relative;
+}
+
+/*Input bars - email & kodeord*/
+.wrapper{
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  padding: 50px;
+}
+
+.form-container input{
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 3px;
+  font-family: "Arial", sans-serif;
+  color: #4a4a4a;
+  letter-spacing: 0.5px;
+  required="";
+}
+
+::placeholder{
+  color: #9a9a9a;
+  font-weight: 400;
+}
+
+
+
+/*Bredcrumbs*/
+.breadcrumbs{
+  padding: 20px;
+}
+
+.breadcrumbs-iteams{
+  display: inline-block;
+}
+
+.breadcrumbs-iteams:not(:last-of-type)::after{
+  content: '/';
+  margin: 0 5px;
+  color: #919191;
+}
+
+.breadcrumbs-link{
+  text-decoration: none;
+  color: #86130E;
+}
+
+.breadcrumbs-link:hover{
+  text-decoration: underline;
+}
+
+.breadcrumbs_link--active{
+  color: grey;
+  font-weight: 500;
+}
+
+
+
+
+/*Article*/
+.info-wrapper {
+  overflow:hidden;
+}
+
+.info-wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+/*Side menu*/
+#side-menu {
+  background-color: white;
+  float:left;
+  margin-right:20px;
+  width:380px;
+}
+
+.list{
+  margin: 10px;
+  height: 350px;
+  width: 340px;
+  background-color: #eee;
+  border-radius: 5px;
+  line-height: 3;
+  font-size: 15px;
+}
+
+.list li a{
+  color: black;
+}
+
+.list:hover{
+  cursor: pointer;
+}
+
+.side1{
+  padding: 20px;
+}
+
+.side2{
+  padding: 20px;
+}
+
+.side3{
+  padding: 20px;
+}
+
+.side4{
+  padding: 20px;
+  padding-right:131.9px;
+  background-color: white;
+  font-weight: 700;
+}
+
+.side5{
+  padding: 40px;
+}
+
+@media screen and (max-width: 1250px) {
+   #side-menu {
+    float: inherit;
+  }
+
+  .list{
+    width: 700px;
+  }
+
+  .side4{
+    padding-right: 491.9px;
+  }
+}
+
+/*Information*/
+#info-container {
+  background-color: white;
+  overflow:hidden;
+  min-height:170px;
+  font-family: "Arial", sans-serif;
+  margin: 20px;
+}
+
+.info-container h4{
+font-size: 18px;
+}
+
+.info-container p{
+  font-size: 16px;
+}
+
+
+.btn{
+  margin-top:15px;
+  position: relative;
+  padding:10px;
+  border-radius:5px;
+  border:none;
+  background-color: #129a55;
+  height: 5vh;
+  width:200px;
+}
+
+.btn a{
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+.info-p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+/*Footer*/
+.footer-line{
+  border: 0;
+  height: 5px;
+  background-color: #129a55;
+  width: auto;
+  margin: auto;
+}
+
+.footer-col li a:hover{
+  text-decoration: underline;
+}
+
+.footer-col1 li a:hover{
+  text-decoration: underline;
+}
+
+h4{
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  color: black;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+ul{
+  list-style: none;
+}
+
+footer{
+  background-color: white;
+  width: 100%;
+  height: 550px;
+  padding: 30px 0;
+  line-height: 1.8;
+  letter-spacing: .5px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row p{
+  font-family: "Arial", sans-serif;
+  font-weight: 500px;
+  font-size: 15px;
+  color: black;
+  text-align: left
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 30px;
+}
+
+.footer-col li, a{
+  font-family: "Arial", sans-serif;
+  font-weight: 500px;
+  font-size: 15px;
+  color: black;
+}
+
+.footer-col1{
+  width: 25%;
+  padding: 0 30px;
+}
+
+.footer-col1 li, a{
+  font-family: "Arial", sans-serif;
+  font-weight: 500px;
+  font-size: 15px;
+  color: black;
+}
