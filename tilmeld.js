@@ -18,16 +18,6 @@ var birth_error = document.getElementById("birth_error");
 var cpr_error = document.getElementById("cpr_error");
 var kommune_error = document.getElementById("kommune_error");
 
-// setting event addEventListener
-fname.addEventListener("blur", nameVerify, true);
-postnr.addEventListener("blur", postVerify, true);
-city.addEventListener("blur", cityVerify, true);
-phone.addEventListener("blur", phoneVerify, true);
-email.addEventListener("blur", emailVerify, true);
-birth.addEventListener("blur", birthVerify, true);
-cpr.addEventListener("blur", cprVerify, true);
-kommune.addEventListener("blur", kommuneVerify, true);
-
 //function
 function validate(){
   if (fname.value == ""){
@@ -84,55 +74,5 @@ function validate(){
     kommune_error.textContent = "Skal have kommune";
     kommune.focus();
     return false;
-  }
-}
-
-function nameVerify(){
-  if (fname.value !=""){
-    fname.style.border = "1px solid #5E6E66";
-    name_error.innerHTML = "";
-    return true;
-  }
-
-  if (post.value !=""){
-    post.style.border = "1px solid #5E6E66";
-    post_error.innerHTML = "";
-    return true;
-  }
-
-  if (city.value !=""){
-    city.style.border = "1px solid #5E6E66";
-    city_error.innerHTML = "";
-    return true;
-  }
-
-  if (phone.value !=""){
-    phone.style.border = "1px solid #5E6E66";
-    phone_error.innerHTML = "";
-    return true;
-  }
-
-  if (email.value !=""){
-    email.style.border = "1px solid #5E6E66";
-    email_error.innerHTML = "";
-    return true;
-  }
-
-  if (birth.value !=""){
-    birth.style.border = "1px solid #5E6E66";
-    birth_error.innerHTML = "";
-    return true;
-  }
-
-  if (cpr.value !=""){
-    cpr.style.border = "1px solid #5E6E66";
-    cpr_error.innerHTML = "";
-    return true;
-  }
-
-  if (kommune.value !=""){
-    kommune.style.border = "1px solid #5E6E66";
-    kommune_error.innerHTML = "";
-    return true;
   }
 }
