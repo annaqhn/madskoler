@@ -256,6 +256,10 @@ form div{
   min-width: 350px;
 }
 
+.validate_error {
+  color: #FF1F1F;
+}
+
 .move{
   position: relative;
 }
