@@ -107,7 +107,12 @@
                 <p class="step-text">Kommune</p>
             </div>
           </div>
-
+          <div id="main">
+            <p id="content"></p>
+            <button class="btn" id="previousBtn" disabled>Tilbage</button>
+            <button onclick="hFunction()" class="btn" id="nextBtn">Næste</button>
+            <button class="btn" id="finishBtn" disabled>Tilmeld</button>
+          </div>
         </div>
         <!-- Progressbar slut-->
 
@@ -171,12 +176,7 @@
             <input type="text" id="kommune" name="kommune" class="text1" placeholder="Vælg kommune hvor du vil være instruktør">
             <div id="kommune_error" class="validate_error"></div>
           </div>
-          <div id="main">
-            <p id="content"></p>
-            <button class="btn" id="previousBtn" disabled>Tilbage</button>
-            <button onclick="hFunction()" class="btn" id="nextBtn">Næste</button>
-            <button class="btn" id="finishBtn" disabled>Tilmeld</button>
-          </div>
+          <input type="submit" value="Tilmeld" class="button-tilmeld" name="register">
         </div>
       </div>
       <!--tilmeldingsformularen end-->
